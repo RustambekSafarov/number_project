@@ -138,7 +138,17 @@ class Number:
 
         returns: int
         """
-        pass
+        n = self.value
+        digits = []
+        i = 0
+        s = 0
+        while n >= i:
+            s = n % 10
+            digits.append(s)
+            n //= 10
+            i += 1
+        digits.reverse()
+        return max(digits)
 
     def get_min(self):
         """
@@ -146,7 +156,17 @@ class Number:
 
         returns: int
         """
-        pass
+        n = self.value
+        digits = []
+        i = 0
+        s = 0
+        while n >= i:
+            s = n % 10
+            digits.append(s)
+            n //= 10
+            i += 1
+        digits.reverse()
+        return min(digits)
 
     def get_average(self):
         """
